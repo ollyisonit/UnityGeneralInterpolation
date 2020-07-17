@@ -1,5 +1,5 @@
 # Unity General Interpolation
-A Utils class that can be used to create interpolation methods or coroutines for any object.
+A Utils class that can be used to create interpolation methods or coroutines for any object. (See Interpolator.cs for details)
 
 ## Features
 - General interpolation method and coroutine that work for any object
