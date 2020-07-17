@@ -1,4 +1,4 @@
-# UnityGeneralInterpolation
+# Unity General Interpolation
 A Utils class that can be used to create interpolation methods or coroutines for any object.
 
 ## Features
