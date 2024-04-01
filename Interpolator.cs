@@ -3,7 +3,7 @@ using System.Collections;
 using System.Reflection;
 using UnityEngine;
 
-namespace dninosores.UnityGeneralInterpolation
+namespace ollyisonit.UnityGeneralInterpolation
 {
 	/// <summary>
 	/// Contains methods for creating coroutines that can interpolate between any two values.
@@ -49,7 +49,7 @@ namespace dninosores.UnityGeneralInterpolation
 		/// <returns>A coroutine that will execute the interpolation.</returns>
 		public static IEnumerator Interpolate<T>(T start, T end, float time, Action<T> output)
 		{
-			return Interpolate(start, end, time, AnimationCurve.Linear(0, 0, 1, 1), output, GetAdd<T>(), 
+			return Interpolate(start, end, time, AnimationCurve.Linear(0, 0, 1, 1), output, GetAdd<T>(),
 				GetSubtract<T>(), GetScale<T>());
 		}
 
@@ -149,7 +149,7 @@ namespace dninosores.UnityGeneralInterpolation
 			MethodInfo negate = typeof(T).GetMethod("op_UnaryNegation", new Type[] { });
 			if (negate != null)
 			{
-				return (T a, T b) => GetAdd<T>()(a, (T) negate.Invoke(b, new object[] { }));
+				return (T a, T b) => GetAdd<T>()(a, (T)negate.Invoke(b, new object[] { }));
 			}
 
 			throw new MissingMethodException("No subtraction or negation operator found on " + typeof(T));
