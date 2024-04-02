@@ -1,5 +1,5 @@
 # Unity General Interpolation
-A Utils class that can be used to create interpolation methods or coroutines for any object. (See Interpolator.cs for details)
+A Utils class that can be used to quickly build interpolation methods and coroutines for any object. (See Interpolator.cs for details)
 
 ## Features
 - General interpolation method and coroutine that work for any object
@@ -7,4 +7,4 @@ A Utils class that can be used to create interpolation methods or coroutines for
 - Use Animation Curves to add easing to your interpolations
 
 ## Installation
-Download or clone this repository and add it to your Unity project assets folder.
+[Download](https://github.com/ollyisonit/UnityGeneralInterpolation/releases/latest) or clone this repository and add it to your Unity project assets folder.
