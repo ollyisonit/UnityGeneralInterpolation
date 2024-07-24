@@ -1,4 +1,7 @@
 # Unity General Interpolation
+
+![](icon.jpg)
+
 A Utils class that can be used to quickly build interpolation methods and coroutines for any object. (See Interpolator.cs for details)
 
 ## Features
